@@ -1,0 +1,21 @@
+{
+  "name": "this-talk-NCJS",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.17.5"
+  },
+  "scripts": {
+    "babel-node": "babel-node",
+    "start": "nodemon --exec npm run babel-node -- ./src/index.js",
+    "class": "nodemon --exec npm run babel-node -- ./src/class.js",
+    "build": "babel src -d dist"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1"
+  }
+}
